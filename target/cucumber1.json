@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-11T17:34:06.165Z",
+        "line": 4,
+        "name": "Search foe items and validate results",
+        "description": "",
+        "id": "search-and-place-order-for-vegetable;search-foe-items-and-validate-results",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4988100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on greencart landing page",
+            "match": {
+              "location": "stepDefination.Stepdf.user_is_on_greencart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user search for \"cucumber\" vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cucumber\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefination.Stepdf.user_search_for_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"cucumber\" results are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cucumber\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefination.Stepdf.results_are_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@seleniumTests"
+          }
+        ]
+      }
+    ],
+    "name": "search and place order for vegetable",
+    "description": "",
+    "id": "search-and-place-order-for-vegetable",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Search.feature",
+    "tags": []
+  }
+]
